@@ -117,7 +117,7 @@ function Index() {
 
 function App() {
   return (
-    <BrowserRouter basename="/test_No.13">
+    <BrowserRouter basename="/testmain">
       <Container className="p-3 my-3 bg-light">
         <Routes>
           <Route path="/" element={<Index />} />
