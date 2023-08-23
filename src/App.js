@@ -7,7 +7,7 @@ import Contact from "./Contact";
 export function Layout() {
   return (
     <nav className="container-fluid p-1 Bgo text-white text-center row">
-      <img src='5-13.jpgw3.webp' width={50} height={50} alt="Logo" className="photo rounded-circle" />
+      <img src='5-13.jpg' width={50} height={50} alt="Logo" className="photo rounded-circle" />
       <NavLink
         to="/"
         className="link px-2 col-sm-2 mt-3 Edit sil"
@@ -64,7 +64,7 @@ function Index() {
           </div>
           <div class="col-sm-4 text-center">
             <img
-              src='ทงสึ.webp'
+              src='ทงสึ.png'
               alt="ข้าวหมูทอดทงคัตสึ"
               className="picher rounded-circle mt-3"
             />
@@ -82,7 +82,7 @@ function Index() {
           </div>
           <div class="col-sm-4 text-center">
             <img
-              src="คัตสึ.webp"
+              src="คัตสึ.png"
               alt="ข้าวหมูทอดคัตสึด้ง"
               className="picher rounded-circle mt-3"
             />
@@ -96,7 +96,7 @@ function Index() {
           </div>
           <div class="col-sm-4 text-center">
             <img
-              src="แกงหรี่.webp"
+              src="แกงหรี่.png"
               alt="ข้าวแกงกะหรี่ญี่ปุ่น"
               className="picher rounded-circle mt-3"
             />
@@ -117,7 +117,7 @@ function Index() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/test_No.13">
       <Container className="p-3 my-3 bg-light">
         <Routes>
           <Route path="/" element={<Index />} />
