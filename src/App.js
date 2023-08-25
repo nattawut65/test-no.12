@@ -3,11 +3,15 @@ import "./App.css";
 import { Container } from "react-bootstrap";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import Contact from "./Contact";
+import คัตสึ from "./คัตสึ.png";
+import แกงหรี่ from "./แกงหรี่.png";
+import ทงสึ from "./ทงสึ.png";
+import gaylogorun from "./gaylogorun.jpg";
 
 export function Layout() {
   return (
     <nav className="container-fluid p-1 Bgo text-white text-center row">
-      <img src='5-13.jpg' width={50} height={50} alt="Logo" className="photo rounded-circle" />
+      <img src={gaylogorun} width={50} height={50} alt="Logo" className="photo rounded-circle" />
       <NavLink
         to="/"
         className="link px-2 col-sm-2 mt-3 Edit sil"
@@ -64,7 +68,7 @@ function Index() {
           </div>
           <div class="col-sm-4 text-center">
             <img
-              src='ทงสึ.png'
+              src={ทงสึ}
               alt="ข้าวหมูทอดทงคัตสึ"
               className="picher rounded-circle mt-3"
             />
@@ -82,7 +86,7 @@ function Index() {
           </div>
           <div class="col-sm-4 text-center">
             <img
-              src="คัตสึ.png"
+              src={คัตสึ}
               alt="ข้าวหมูทอดคัตสึด้ง"
               className="picher rounded-circle mt-3"
             />
@@ -96,7 +100,7 @@ function Index() {
           </div>
           <div class="col-sm-4 text-center">
             <img
-              src="แกงหรี่.png"
+              src={แกงหรี่}
               alt="ข้าวแกงกะหรี่ญี่ปุ่น"
               className="picher rounded-circle mt-3"
             />
@@ -117,7 +121,7 @@ function Index() {
 
 function App() {
   return (
-    <BrowserRouter basename="/testmain2">
+    <BrowserRouter basename="/testmainofmain">
       <Container className="p-3 my-3 bg-light">
         <Routes>
           <Route path="/" element={<Index />} />
